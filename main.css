@@ -1,0 +1,164 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the container div */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 5rem;
+    row-gap: 3rem;
+}
+
+/* Styling the header section */
+header {
+    margin-top: -2.5rem;
+    background-color: rgb(221, 219, 219);
+    width: 50%;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 5px 10px black;
+    text-align: center;
+}
+
+header h1 {
+    font-size: large;
+}
+
+/* Styling the calculatorSection section */
+.calculatorSection {
+    width: 23%;
+    background-color: black;
+    color: white;
+    border-radius: 0.2rem;
+    box-shadow: 0px 5px 15px black;
+    text-align: center;
+    height: 60vh;
+}
+
+/* calculatorSection title styling */
+.calculatorSection h2 {
+    padding: 0.5rem;
+}
+
+/* Styling the theCalculator section */
+.theCalculator {
+    background-color: rgb(14, 12, 12);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling the screen container */
+.screen {
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(233, 227, 227);
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Styling the the screen input data */
+.screenText {
+    color: black;
+    margin-right: 0.5rem;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+/* Styling the keys of the calculator */
+.key {
+    width: 25%;
+    padding: 0.5rem;
+    margin: 5px;
+    background-color: black;
+    border-radius: 3rem;
+}
+
+/* Hover effect on the keys */
+.key:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* Styling the operators keys */
+.op {
+    background-color: red;
+}
+
+/* Responsive Design Fixes for Devices with a maximum width of 1200px */
+@media screen and (max-width: 1200px) {
+    .calculatorSection {
+        width: 30%;
+        height: 30vh;
+    }
+}
+
+/* Responsive Design Fixes for Devices with a maximum width of 1024px */
+@media screen and (max-width: 1024px) {
+    header {
+        width: 70%;
+    }
+    .calculatorSection {
+        width: 50%;
+        height: 30vh;
+    }
+}
+
+/* Responsive Design Fixes for Devices with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    header {
+        width: 70%;
+    }
+    
+    header h1 {
+        font-size: small;
+    }
+    .calculatorSection {
+        width: 50%;
+    }
+    .key {
+        width: 22%;
+        padding: 0.8rem;
+    }
+    .screen {
+        height: 4rem;
+    }
+}
+
+/* Responsive Design Fixes for Devices with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 2rem;
+        row-gap: 1.5rem;
+    }
+    header {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    header h1 {
+        font-size: small;
+    }
+    .calculatorSection {
+        width: 100%;
+        height: auto;
+    }
+    .key {
+        width: 25%;
+        text-align: center;
+        padding: 1rem;
+    }
+    .screen {
+        height: 3.5rem;
+    }
+}
